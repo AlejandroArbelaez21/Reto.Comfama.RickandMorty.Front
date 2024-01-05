@@ -1,0 +1,103 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.o-table {
+   width: 100%;
+   font-family: $roboto-regular;
+   &--container {
+      position: sticky;
+      top: 0;
+      padding: 25px 25px;
+      background-color: $white;
+   }
+   &__title {
+      color: $magenta;
+      font-family: $roboto-bold;
+      text-transform: uppercase;
+   }
+   &__tags {
+      padding-top: 20px;
+      &__tag {
+         border-radius: 15px;
+         padding: 7px 15px;
+         color: $white;
+         font-size: size(14);
+         margin-right: 10px;
+         cursor: pointer;
+         &:nth-child(1) { background-color: $dark-gray; }
+         &:nth-child(2) { background-color: $red; }
+         &:nth-child(3) { background-color: #9c6200; }
+         &:nth-child(4) { background-color: #88145a; }
+         &:nth-child(5) { background-color: #feb8ac; }
+         &:nth-child(6) { background-color: #dddddd; }
+         &--select {
+            position: relative;
+            padding-right: 10px;
+            font-family: $roboto-bold;
+            i {
+               border-radius: 10px;
+               background-color: $white;
+               color: $dark-gray;
+               padding: 0 5px;
+               margin-left: 8px;
+               font-family: $roboto-bold;
+            }
+            &:after {
+               content: '';
+               position: absolute;
+               left: 50%;
+               transform: translate(-50%, 0);
+               bottom: -10px;
+               width: 5px;
+               height: 5px;
+               background-color: $azabache;
+               border-radius: 5px;
+            }
+         }
+      }
+   }
+   &__grid {
+      margin-top: 15px;
+      &__tr {
+         &__th {
+            font-family: $roboto-bold;
+            font-size: size(20);
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: $magenta;
+            color: $white;
+            border: 1px solid $white;
+         }
+         &__td {
+            border: 1px solid #dbdced;
+            padding: 10px;
+            &:nth-child(1) { 
+               background-color: $magenta;
+               color: $white;
+               border: 1px solid $white;
+            }
+            a {
+               color: #0b52b8;
+            }
+         }
+         .no-title {
+            background-color: #88145a;
+            color: $white;
+         }
+         .no-miga {
+            background-color: $red;
+            color: $white;
+         }
+         .no-route {
+            background-color: #9c6200;
+            color: $white;
+            a {
+               color: $white;
+            }
+         }
+         .out-range {
+            background-color: #feb8ac;
+         }
+      }
+   }
+}

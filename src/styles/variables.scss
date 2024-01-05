@@ -1,0 +1,82 @@
+/* Fonts */
+$roboto-bold: "Roboto-Bold";
+$roboto-medium: "Roboto-Medium";
+$roboto-regular: "Roboto-Regular";
+
+/* Pixels to rem */
+$base-size: 17.5;
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+/* Breakpoints */
+$s-small: 320px;
+$small: 440px;
+$s-medium: 570px;
+$medium: 768px;
+$large: 960px;
+$x-large: 1060px;
+$xx-large: 1250px;
+$xxx-large: 1440px;
+$high-quality: 1700px;
+
+/* Z-index */
+$z-back: -1;
+$z-none: 0;
+$z-floor: 1;
+$z-medium: 10;
+$z-up: 50;
+$z-top: 100;
+$z-super: 200;
+
+/* Site max width */
+$site-max-width: 1300px;
+
+/* Shadow */
+$shadow-primary: 0px 3px 12px #0000001f;
+
+/* Colors - Static*/
+$magenta: #ff277e;
+$deep-cerise: #ee2b7b;
+$white: #ffffff;
+$coconut: #f9f9f9;
+$lilia: #eeeeee;
+$silver: #d5d5d5;
+$faded-gray: #a0a0a0;
+$faded-black: #00000005;
+$dove-gray: #6c6f84;
+$dark-gray: #292929;
+$black-olive: #3d3d3d;
+$gray-border: #6f7287;
+$shadow: #575757;
+$charcoal: #191919;
+$onyx: #141414;
+$black: #000000;
+$wheat: #fff4e7;
+$shadow-background: #ababab; // #E0E0E0;
+$solid-gray: #e2e3e7;
+$slate-gray: #6c6f86;
+$red: #e80c30;
+$concrete: #595959;
+$solitude: #eaecf5;
+$matterhorn: #555555;
+$metal-black: #3e3e3e;
+$azabache: #333333;
+$zinc: #ededed;
+$twitter-blue: #1da1f2;
+$instagram-purple: #833ab4;
+$facebook-blue: #4267b2;
+
+/* General Size */
+$size-section-margin-top: 20;
+$size-section-margin-bottom: 20;
+
+$size-font-title1: 90;
+$size-font-title2: 45;
+$size-font-title3: 32;
+$size-font-title4: 22;
+$size-font-title5: 20;
+
+$size-font-text1: 18;
+$size-font-text2: 16;
+$size-font-text3: 14;

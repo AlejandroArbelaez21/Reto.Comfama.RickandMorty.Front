@@ -1,0 +1,58 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.o-home {
+  @include from($large) {
+    padding: 5rem 1rem;
+  }
+
+  &__loading {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: whitesmoke;
+    opacity: 0.9;
+  }
+
+  &__sections {
+    margin: 3rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(163, 162, 162);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__displayed {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      div {
+        padding: 0 5px;
+        cursor: pointer;
+      }
+      &__character {
+        &.--selected {
+          color: aqua;
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    div {
+      margin: 0 15px;
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+}

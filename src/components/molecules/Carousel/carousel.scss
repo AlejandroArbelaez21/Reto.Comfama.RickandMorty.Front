@@ -1,0 +1,9 @@
+.m-carousel {
+    width: 90%;
+    padding: 1rem 4rem;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

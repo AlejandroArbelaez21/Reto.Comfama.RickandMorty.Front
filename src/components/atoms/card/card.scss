@@ -1,0 +1,62 @@
+.a-card {
+  width: 600px;
+  height: 220px;
+  display: flex;
+  background-color: rgb(60, 62, 68);
+  border-radius: 10px;
+  margin: 10px;
+
+  &__image {
+    position: relative;
+    &__overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border-radius: 5px;
+      top: 80%;
+      background-color: rgba(110, 109, 109, 0.8);
+      padding: 10px;
+      width: auto;
+
+      &__text {
+        
+      }
+
+      .recomended {
+        filter: invert(70%) sepia(200%);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  &__button {
+    padding: 1rem;
+    img {
+      cursor: pointer;
+    }
+  }
+  &__content {
+    padding: 0.5rem 1rem;
+    width: 290px;
+    &__name {
+      font-size: 26px;
+      font-weight: bold;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+.favorite,
+.not-favorite:hover {
+  filter: invert(67%) sepia(89%) saturate(7492%) hue-rotate(346deg)
+    brightness(84%) contrast(146%);
+}
+
+.not-favorite {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}

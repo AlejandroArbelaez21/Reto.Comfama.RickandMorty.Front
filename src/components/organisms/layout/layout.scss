@@ -1,0 +1,12 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+main {
+   background-color: var(--color-coconut-dark);
+
+   @include from($large) {
+      padding-left: 0;
+   }
+}
+
+

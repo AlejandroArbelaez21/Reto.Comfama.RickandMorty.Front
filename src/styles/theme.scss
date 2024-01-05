@@ -1,0 +1,93 @@
+/* Colors - Light theme */
+@mixin light-mode {
+   --color-black-white: #000000;
+   --color-coconut-black: #f9f9f9;
+   --color-coconut-charcoal: #f9f9f9;
+   --color-coconut-dark: #f9f9f9;
+   --color-coconut-onyx: #f9f9f9;
+   --color-coconut-faded_white: #f9f9f9;
+   --color-concrete-fadded: #595959;
+   --color-dark-concrete: #292929;
+   --color-dark-faded: #292929;
+   --color-dark-magenta: #292929;
+   --color-dark-white: #292929;
+   --color-dove_gray-faded_gray: #6C6F84;
+   --color-faded-gray: #A0A0A0;
+   --color-faded-concrete: #A0A0A0;
+   --color-gray_border-dark: #6F7287;
+   --color-lilia-onyx: #EEEEEE;
+   --color-lilia-charcoal: #EEEEEE;
+   --color-lilia-metak_black: #EEEEEE;
+   --color-magenta-white: #FF277E;
+   --color-shadow-white: #575757;
+   --color-solid_gray-dark: #E2E3E7;
+   --color-solid_gray-onyx: #E2E3E7;
+   --color-zinc-azabache:  #EDEDED;
+   --color-wheat-onyx: #FFF4E7;
+   --color-white-black: #FFFFFF;
+   --color-white-charcoal: #FFFFFF;
+   --color-white-dark: #FFFFFF;
+   --color-white-onyx: #FFFFFF;
+   --filter-none-invert: none;
+   --filter-none-brightness: none;
+   --color-faded-white: #A0A0A0;
+}
+
+/* Colors - Dark theme */
+@mixin dark-mode {
+   --color-black-white: #FFFFFF;
+   --color-coconut-black: #000000;
+   --color-coconut-charcoal: #191919;
+   --color-coconut-dark: #292929;
+   --color-coconut-onyx: #141414;
+   --color-coconut-faded_white: #ffffff05;
+   --color-dark-concrete: #595959;
+   --color-dark-faded: #A0A0A0;
+   --color-dark-magenta: #FF277E;
+   --color-dark-white: #FFFFFF;
+   --color-dove_gray-faded_gray: #A0A0A0;
+   --color-concrete-fadded: #A0A0A0;
+   --color-faded-concrete: #595959;
+   --color-faded-gray: #FFFFFF;
+   --color-gray_border-dark: #292929;
+   --color-lilia-onyx: #141414;
+   --color-lilia-charcoal: #191919;
+   --color-lilia-metak_black: #3E3E3E;
+   --color-magenta-white: #FFFFFF;
+   --color-shadow-white: #FFFFFF;
+   --color-solid_gray-dark: #292929;
+   --color-solid_gray-onyx: #141414;
+   --color-wheat-onyx: #141414;
+   --color-white-black: #000000;
+   --color-white-charcoal: #191919;
+   --color-white-dark: #292929;
+   --color-white-onyx: #141414;
+   --color-zinc-azabache: #333333;
+   --filter-none-invert: invert(1);
+   --filter-none-brightness: brightness(500%);
+   --color-faded-white: #FFFFFF;
+}
+
+:root {
+   @include light-mode;
+}
+
+.dark-mode {
+   @include dark-mode;
+}
+
+.light-mode {
+   @include light-mode;
+}
+
+@media (prefers-color-scheme: light) {
+   :root {
+      @include light-mode;
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      @include dark-mode;
+   }
+}
